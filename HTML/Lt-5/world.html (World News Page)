@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nabila Anjum Bente Ahad">
+    <meta name="description" content="DailyFlash - World news and global updates.">
+    <title>DailyFlash | World</title>
+</head>
+<body>
+
+    <header>
+        <h1>DailyFlash</h1>
+        <p>Your Source for Instant News</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><b>World</b></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="tech.html">Tech</a></li>
+            <li><a href="lifestyle.html">Lifestyle</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section>
+            <article>
+                <h2>World Leaders Meet for Climate Summit</h2>
+                <small>Published: Dec 7, 2025</small><br>
+                <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" width="300" alt="Climate Summit">
+                <p>Global leaders gather to discuss climate change and strategies for carbon reduction. Delegates emphasized urgent environmental policies and international cooperation.</p>
+                <a href="#">Read More</a>
+            </article>
+            <hr>
+            <article>
+                <h2>International Trade Agreements Signed</h2>
+                <small>Published: Dec 6, 2025</small><br>
+                <img src="https://images.unsplash.com/photo-1508385082359-fd2e2e3c6b55" width="300" alt="Trade Agreements">
+                <p>Several countries finalized trade agreements to boost global economy. Experts expect positive impacts on emerging markets and cross-border investments.</p>
+                <a href="#">Read More</a>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Top Headlines</h3>
+            <ul>
+                <li><a href="#">UN Reports Climate Action Progress</a></li>
+                <li><a href="#">Elections Held in Multiple Countries</a></li>
+                <li><a href="#">Global Health Organization Updates Guidelines</a></li>
+                <li><a href="#">New Environmental Policies Announced</a></li>
+                <li><a href="#">Diplomatic Talks Resume</a></li>
+            </ul>
+            <div style="border:1px solid #000; padding:5px; margin-top:10px;">Advertisement</div>
+        </aside>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>© 2025 DailyFlash | All Rights Reserved</p>
+        <p>
+            <a href="#">Facebook</a> |
+            <a href="#">X (Twitter)</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">LinkedIn</a>
+        </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nabila Anjum Bente Ahad">
+    <meta name="description" content="DailyFlash - Technology news and updates.">
+    <title>DailyFlash | Tech</title>
+</head>
+<body>
+
+    <header>
+        <h1>DailyFlash</h1>
+        <p>Your Source for Instant News</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="world.html">World</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><b>Tech</b></li>
+            <li><a href="lifestyle.html">Lifestyle</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section>
+            <article>
+                <h2>New Smartphone Sets Record Sales</h2>
+                <small>Published: Dec 5, 2025</small><br>
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" width="300" alt="Smartphone Sales">
+                <p>The latest smartphone release broke sales records within hours. Experts cite innovative features and competitive pricing as main drivers of its success.</p>
+                <a href="#">Read More</a>
+            </article>
+            <hr>
+            <article>
+                <h2>AI Software Transforms Workflows</h2>
+                <small>Published: Dec 4, 2025</small><br>
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b" width="300" alt="AI Software">
+                <p>Businesses are adopting new AI-powered tools to improve productivity. Analysts highlight efficiency gains and cost reductions across sectors.</p>
+                <a href="#">Read More</a>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Top Headlines</h3>
+            <ul>
+                <li><a href="#">Tech Giant Launches New AI Chip</a></li>
+                <li><a href="#">Cybersecurity Breach Affects Millions</a></li>
+                <li><a href="#">New App Gains Millions of Users</a></li>
+                <li><a href="#">Software Updates Released</a></li>
+                <li><a href="#">Electric Car Sales Surge</a></li>
+            </ul>
+            <div style="border:1px solid #000; padding:5px; margin-top:10px;">Advertisement</div>
+        </aside>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>© 2025 DailyFlash | All Rights Reserved</p>
+        <p>
+            <a href="#">Facebook</a> |
+            <a href="#">X (Twitter)</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">LinkedIn</a>
+        </p>
+    </footer>
+
+</body>
+</html>

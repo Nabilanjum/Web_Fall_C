@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nabila Anjum">
+    <meta name="description" content="Personal portfolio of Nabila Anjum, CSE student">
+    <meta name="keywords" content="portfolio, CSE student, web developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabila's Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <h1>Nabila Anjum Bente Ahad</h1>
+        <nav>
+            <ul>
+                <li><a href="#bio">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <section id="bio">
+            <h2>About Me</h2>
+            <p>
+                I am a fourth-year student of Computer Science.  
+                I like technical problem solving.  
+                I like to test my limitations by putting myself in complex technical situations.
+            </p>
+            <hr>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <table border="1" cellpadding="10">
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Passing Year</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>BSc in CSE</td>
+                    <td>American International University Bangladesh</td>
+                    <td>2026 (Tentative)</td>
+                    <td>CGPA 3.00</td>
+                </tr>
+            </table>
+            <hr>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label>Your Name:</label><br>
+                <input type="text" name="name" value="Nabila Anjum Bente Ahad"><br><br>
+
+                <label>Email:</label><br>
+                <input type="email" name="email" value="Nabila@gmail.com"><br><br>
+
+                <label>Phone:</label><br>
+                <input type="text" name="phone" value="013-**********"><br><br>
+
+                <label>WhatsApp:</label><br>
+                <input type="text" name="whatsapp" value="Nabila Anjum (WhatsApp)"><br><br>
+
+                <label>Message:</label><br>
+                <textarea name="message" rows="4" cols="40" placeholder="Write your message..."></textarea><br><br>
+
+                <button type="submit">Send</button>
+            </form>
+            <hr>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nabila Anjum Bente Ahad. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
 

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nabila Anjum Bente Ahad">
+    <meta name="description" content="Product display page for Anjum Store">
+    <title>Products - Anjum Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .product-container {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .product-box {
+            display: inline-block; /* side by side */
+            width: 300px;
+            background-color: #ffffff;
+            border: 2px solid #ccc;
+            padding: 15px;
+            margin: 10px;
+            vertical-align: top;
+            text-align: center;
+            box-sizing: border-box;
+            transition: all 0.3s;
+        }
+
+        .product-box img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .product-box h3 {
+            margin: 10px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .product-box a {
+            text-decoration: none;
+            color: white;
+            background-color: #4CAF50;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .product-box a:hover {
+            background-color: #45a049;
+        }
+
+        /* Hover outline effect */
+        .product-box:hover {
+            outline: 3px solid #4CAF50;
+            outline-offset: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Our Products</h1>
+
+    <div class="product-container">
+
+        <div class="product-box">
+            <img src="https://images.unsplash.com/photo-1621404172458-9419b48615b1" alt="Sony WH-1000XM6 Headphones">
+            <h3>Sony WH-1000XM6 Wireless Headphones</h3>
+            <p>Industry-leading Active Noise Cancellation (ANC) with exceptional audio fidelity. Lightweight design for superior comfort and long battery life.</p>
+            <p class="price">$428</p>
+            <a href="#">Buy Now</a>
+        </div>
+
+        <div class="product-box">
+            <img src="https://images.unsplash.com/photo-1593340576307-e54e4c29c5a1" alt="Oura Ring 4">
+            <h3>Oura Ring 4 Smart Ring</h3>
+            <p>Advanced sleep, activity, and health tracking in a minimalist, non-screen design. Monitors heart rate, temperature, and respiration during the day and night.</p>
+            <p class="price">$399</p>
+            <a href="#">Buy Now</a>
+        </div>
+
+        <div class="product-box">
+            <img src="https://images.unsplash.com/photo-1627885375525-4672666d6c6e" alt="Dyson HushJet Air Purifier">
+            <h3>Dyson HushJet Air Purifier</h3>
+            <p>Combines powerful air purification with quiet operation and smart home integration. Traps ultra-fine particles, allergens, and odors throughout the room.</p>
+            <p class="price">$649</p>
+            <a href="#">Buy Now</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

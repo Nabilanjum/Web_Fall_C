@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TasteHub Restaurant Menu</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to TasteHub Restaurant</h1>
+        <p>Your favorite place for delicious meals!</p>
+
+        <nav>
+            <a href="#starters">Starters</a> |
+            <a href="#main-course">Main Course</a> |
+            <a href="#desserts">Desserts</a> |
+            <a href="#drinks">Drinks</a> |
+            <a href="#chef-special">Chef's Special</a> |
+            <a href="#offers">Daily Offers</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <section id="starters">
+        <h2>Starters</h2>
+
+        <h3>1. Crispy Chicken Strips</h3>
+        <img src="https://images.unsplash.com/photo-1604908177225-c9093e7bbf39" width="250">
+        <p>Golden fried chicken strips served with garlic mayo.</p>
+
+        <h3>2. Vegetable Spring Rolls</h3>
+        <img src="https://images.unsplash.com/photo-1584270354949-1a19d6699a1d" width="250">
+        <p>Fresh and crispy rolls filled with mixed vegetables.</p>
+
+        <p><a href="#top">Back to Top</a></p>
+    </section>
+
+    <hr>
+
+    <section id="main-course">
+        <h2>Main Course</h2>
+
+        <h3>1. Beef Steak</h3>
+        <img src="https://images.unsplash.com/photo-1553163147-622ab57e7c19" width="250">
+        <p>Juicy beef steak cooked to perfection.</p>
+
+        <h3>2. Chicken Alfredo Pasta</h3>
+        <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e" width="250">
+        <p>Creamy pasta tossed with grilled chicken.</p>
+
+        <p><a href="#top">Back to Top</a></p>
+    </section>
+
+    <hr>
+
+    <section id="desserts">
+        <h2>Desserts</h2>
+
+        <h3>1. Chocolate Lava Cake</h3>
+        <img src="https://images.unsplash.com/photo-1590080876396-c8a77676e7e9" width="250">
+        <p>Warm chocolate cake with a gooey center.</p>
+
+        <h3>2. Strawberry Cheesecake</h3>
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" width="250">
+        <p>Classic cheesecake topped with fresh strawberries.</p>
+
+        <p><a href="#top">Back to Top</a></p>
+    </section>
+
+    <hr>
+
+    <section id="drinks">
+        <h2>Drinks</h2>
+
+        <h3>1. Fresh Orange Juice</h3>
+        <img src="https://images.unsplash.com/photo-1577803645773-f96470509666" width="250">
+        <p>Freshly squeezed and full of vitamins.</p>
+
+        <h3>2. Iced Latte</h3>
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" width="250">
+        <p>Chilled coffee with milk and ice.</p>
+
+        <p><a href="#top">Back to Top</a></p>
+    </section>
+
+    <hr>
+
+    <fieldset id="chef-special">
+        <legend><h2>Chef's Special</h2></legend>
+
+        <h3>Signature BBQ Platter</h3>
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" width="250">
+        <p>A delicious mix of grilled chicken, beef, and special sauces.</p>
+
+        <h3>Royal Biryani</h3>
+        <img src="https://images.unsplash.com/photo-1600628422011-bd057d80d1c9" width="250">
+        <p>Traditional biryani infused with aromatic spices.</p>
+
+        <p><a href="#top">Back to Top</a></p>
+    </fieldset>
+
+    <hr>
+
+    <aside id="offers">
+        <h2> Daily Offers</h2>
+        <ul>
+            <li>Buy 1 Get 1 Free – Chicken Strips</li>
+            <li>20% Off – All Desserts</li>
+            <li>Free Drink with any Main Course</li>
+        </ul>
+    </aside>
+
+    <hr>
+
+    <footer>
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> Bashundhara R/A, Block C, Road 2, Dhaka</p>
+        <p><strong>Phone:</strong> 013********</p>
+        <p><strong>Opening Hours:</strong> Open Daily: 9 AM – 10 PM</p>
+        <p>© 2025 TasteHub Restaurant</p>
+    </footer>
+
+</body>
+</html>

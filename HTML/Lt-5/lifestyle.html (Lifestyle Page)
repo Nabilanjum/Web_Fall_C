@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nabila Anjum Bente Ahad">
+    <meta name="description" content="DailyFlash - Lifestyle news and stories.">
+    <title>DailyFlash | Lifestyle</title>
+</head>
+<body>
+
+    <header>
+        <h1>DailyFlash</h1>
+        <p>Your Source for Instant News</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="world.html">World</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="tech.html">Tech</a></li>
+            <li><b>Lifestyle</b></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section>
+            <article>
+                <h2>Healthy Eating Trends in 2025</h2>
+                <small>Published: Dec 3, 2025</small><br>
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" width="300" alt="Healthy Eating">
+                <p>Nutritionists share insights on balanced diets and sustainable food trends. More people are turning to plant-based meals and organic produce.</p>
+                <a href="#">Read More</a>
+            </article>
+            <hr>
+            <article>
+                <h2>Home Décor Ideas for Small Apartments</h2>
+                <small>Published: Dec 2, 2025</small><br>
+                <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb" width="300" alt="Home Decor">
+                <p>Design experts suggest space-saving furniture and multipurpose decor items. Creativity helps maximize comfort in smaller living areas.</p>
+                <a href="#">Read More</a>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Top Headlines</h3>
+            <ul>
+                <li><a href="#">Travel Destinations You Must Visit</a></li>
+                <li><a href="#">Fitness Tips for Busy Professionals</a></li>
+                <li><a href="#">Celebrity Lifestyle Updates</a></li>
+                <li><a href="#">Home Renovation Trends</a></li>
+                <li><a href="#">Eco-Friendly Products to Buy</a></li>
+            </ul>
+            <div style="border:1px solid #000; padding:5px; margin-top:10px;">Advertisement</div>
+        </aside>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>© 2025 DailyFlash | All Rights Reserved</p>
+        <p>
+            <a href="#">Facebook</a> |
+            <a href="#">X (Twitter)</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">LinkedIn</a>
+        </p>
+    </footer>
+
+</body>
+</html>

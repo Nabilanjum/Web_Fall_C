@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nabila Anjum">
+    <meta name="description" content="ElectroMart product catalogue showcasing latest electronics">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroMart - Product Catalogue</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>ElectroMart</h1>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">Products</a> |
+            <a href="#">Contact</a>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <article>
+
+            <fieldset>
+                <legend>Available Products</legend>
+
+                <table border="1" cellpadding="10" width="100%">
+                    <caption><b>ElectroMart Product Catalogue</b></caption>
+
+                    <tr>
+                        <th>Product Image</th>
+                        <th>Product Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="https://images.unsplash.com/photo-1620624021798-e7c5b61405e6" 
+                            width="120" height="120" alt="AuraFit Smartwatch">
+                        </td>
+                        <td><b>AuraFit Smartwatch 9</b></td>
+                        <td>
+                            Advanced health tracking (ECG, blood oxygen, sleep).<br>
+                            1.8-inch bright AMOLED display with multi-day battery life.<br>
+                            Integrated GPS for outdoor activities.
+                        </td>
+                        <td>$349</td>
+                        <td><a href="#">Buy Now</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="https://images.unsplash.com/photo-1621609115747-d5d852a0a200" 
+                            width="120" height="120" alt="Air Purifier">
+                        </td>
+                        <td><b>AeroSense Air Purifier 300</b></td>
+                        <td>
+                            HEPA filter captures 99.97% of airborne particles.<br>
+                            Quiet operation with coverage up to 500 sq. ft.<br>
+                            Smart sensors monitor air quality in real-time.
+                        </td>
+                        <td>$199</td>
+                        <td><a href="#">Buy Now</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="https://images.unsplash.com/photo-1546435384-904d9c74577f" 
+                            width="120" height="120" alt="Wireless Earbuds">
+                        </td>
+                        <td><b>Soundwave Pro Wireless Earbuds</b></td>
+                        <td>
+                            Active Noise Cancellation (ANC) for immersive sound.<br>
+                            Up to 30 hours total playtime with charging case.<br>
+                            Secure, comfortable fit for workouts and travel.
+                        </td>
+                        <td>$129</td>
+                        <td><a href="#">Buy Now</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="https://images.unsplash.com/photo-1574510168661-8930430e719c" 
+                            width="120" height="120" alt="High Speed Blender">
+                        </td>
+                        <td><b>UltraBlend High-Speed Blender</b></td>
+                        <td>
+                            1200-watt motor crushes tough ingredients easily.<br>
+                            Preset programs for smoothies and soups.<br>
+                            Dishwasher-safe pitcher for easy cleaning.
+                        </td>
+                        <td>$89</td>
+                        <td><a href="#">Buy Now</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="https://images.unsplash.com/photo-1541807084534-1188048a9017" 
+                            width="120" height="120" alt="Laptop">
+                        </td>
+                        <td><b>NovaBook 14-inch Laptop</b></td>
+                        <td>
+                            Lightweight aluminum chassis with 14-inch QHD display.<br>
+                            Latest-gen processor and 16GB RAM for fast multitasking.<br>
+                            Fingerprint reader and long-lasting battery.
+                        </td>
+                        <td>$1,199</td>
+                        <td><a href="#">Buy Now</a></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5" align="center"><b>Total Products: 5</b></td>
+                    </tr>
+
+                </table>
+
+            </fieldset>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 ElectroMart | Contact: Nabila@gmail.com</p>
+    </footer>
+
+</body>
+</html>

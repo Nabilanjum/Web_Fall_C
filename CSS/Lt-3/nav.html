@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nabila Anjum Bente Ahad">
+    <meta name="description" content="Navigation bar example for Anjum Corporation">
+    <title>Anjum Corporation - Navigation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #4CAF50; /* green background */
+            width: 100%; /* full width */
+            overflow: hidden; /* clear floats */
+            padding: 10px 0;
+        }
+
+        nav a {
+            display: inline-block; /* horizontal layout */
+            color: white; /* text color */
+            text-decoration: none; /* remove underline */
+            padding: 12px 20px; /* spacing inside link */
+            margin: 0 5px; /* spacing between links */
+            transition: background-color 0.3s, color 0.3s; /* smooth hover */
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #4CAF50;
+            border-radius: 5px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-left: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Anjum Corporation</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+</body>
+</html>

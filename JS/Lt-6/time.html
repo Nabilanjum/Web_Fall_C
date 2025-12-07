@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Digital Clock</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+
+        #clock {
+            font-size: 48px;
+            font-weight: bold;
+            padding: 20px 40px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #ffffff;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Real-Time Digital Clock</h1>
+    <div id="clock">00:00:00 AM</div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            let hours = now.getHours();
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+
+            hours = hours % 12;
+            hours = hours ? hours : 12; // 0 should be 12
+
+            // Add leading zeros
+            const strHours = hours < 10 ? '0' + hours : hours;
+            const strMinutes = minutes < 10 ? '0' + minutes : minutes;
+            const strSeconds = seconds < 10 ? '0' + seconds : seconds;
+
+            const timeString = `${strHours}:${strMinutes}:${strSeconds} ${ampm}`;
+            document.getElementById("clock").innerText = timeString;
+        }
+
+        updateClock();
+
+        setInterval(updateClock, 1000);
+    </script>
+
+</body>
+</html>

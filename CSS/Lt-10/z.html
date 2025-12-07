@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layered Boxes with Z-index</title>
+
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            line-height: 150px;
+            position: absolute; 
+            border: 2px solid black;
+        }
+
+        #redBox {
+            background-color: red;
+            top: 50px;
+            left: 50px;
+            z-index: 1; 
+        }
+
+        #blueBox {
+            background-color: blue;
+            top: 100px;
+            left: 100px;
+            z-index: 2;
+        }
+
+        #greenBox {
+            background-color: green;
+            top: 150px;
+            left: 150px;
+            z-index: 3; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Layered Boxes using Z-index</h2>
+    <p>Green box is on top, Blue in middle, Red at bottom. Try changing z-index values to see layering effects.</p>
+
+    <!-- Boxes -->
+    <div id="redBox" class="box">Red Box</div>
+    <div id="blueBox" class="box">Blue Box</div>
+    <div id="greenBox" class="box">Green Box</div>
+
+</body>
+</html>

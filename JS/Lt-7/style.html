@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Style Control Panel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            text-align: center;
+        }
+
+        #textBlock {
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+            background-color: #f9f9f9;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Dynamic Style Control Panel</h1>
+
+    <p id="textBlock">
+        This is a sample paragraph. You can change its background color, increase its font size,
+        or center-align the text using the buttons below. You can also reset the styles to default.
+    </p>
+
+    <button onclick="changeBackground()">Change Background Color</button>
+    <button onclick="increaseFontSize()">Increase Font Size</button>
+    <button onclick="centerText()">Center Text</button>
+    <button onclick="resetStyle()">Reset Style</button>
+
+    <script>
+        const textBlock = document.getElementById("textBlock");
+        let fontSize = 16; 
+
+        function changeBackground() {
+            const colors = ["#f9d5e5", "#d5f9e3", "#f9f1d5", "#d5e1f9", "#f9d5d5"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            textBlock.style.backgroundColor = randomColor;
+        }
+
+        function increaseFontSize() {
+            fontSize += 2; 
+            textBlock.style.fontSize = fontSize + "px";
+        }
+
+        function centerText() {
+            textBlock.style.textAlign = "center";
+        }
+
+        function resetStyle() {
+            textBlock.style.backgroundColor = "#f9f9f9";
+            fontSize = 16;
+            textBlock.style.fontSize = fontSize + "px";
+            textBlock.style.textAlign = "left";
+        }
+    </script>
+
+</body>
+</html>

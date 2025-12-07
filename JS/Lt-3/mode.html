@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio with Dark/Light Mode</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #ccc;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .dark-mode {
+            background-color: #1e1e1e;
+            color: #f1f1f1;
+        }
+
+        .dark-mode header, .dark-mode footer {
+            border-color: #444;
+        }
+
+        .dark-mode button {
+            background-color: #555;
+            color: white;
+        }
+
+        .dark-mode button:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nabila Anjum Portfolio</h1>
+        <button id="toggleBtn">Switch to Dark Mode</button>
+    </header>
+
+    <main>
+        <h2>Welcome!</h2>
+        <p>I am a computer science student passionate about web development and problem-solving.</p>
+        <p>This is a simple example of a portfolio website with a light/dark mode toggle.</p>
+    </main>
+
+    <footer>
+        <p>© 2025 Nabila Anjum | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById("toggleBtn");
+        const body = document.body;
+        let darkMode = false; // default is light mode
+
+        toggleBtn.addEventListener("click", function() {
+            darkMode = !darkMode; // toggle mode
+
+            if(darkMode) {
+                body.classList.add("dark-mode");
+                toggleBtn.innerText = "Switch to Light Mode";
+            } else {
+                body.classList.remove("dark-mode");
+                toggleBtn.innerText = "Switch to Dark Mode";
+            }
+        });
+    </script>
+
+</body>
+</html>

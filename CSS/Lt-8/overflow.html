@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Overflow Handling Example</title>
+
+    <style>
+        .box {
+            width: 300px;
+            height: 200px;
+            border: 3px solid #333;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        #box1 {
+            overflow: visible;
+            background-color: #f4f4f4;
+        }
+
+        #box2 {
+            overflow: hidden;
+            background-color: #e3f2fd;
+        }
+
+        #box3 {
+            overflow: scroll;
+            background-color: #fce4ec;
+        }
+
+        #box4 {
+            overflow: auto;
+            background-color: #e8f5e9;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Overflow Handling Boxes</h2>
+
+    <div id="box1" class="box">
+        <p>
+            This is a very long text that will not fit inside the box. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Sed et lorem non sapien laoreet varius. Vivamus euismod
+            tortor vel lectus viverra, vel consequat lacus gravida.
+        </p>
+    </div>
+
+    <div id="box2" class="box">
+        <p>
+            This is a very long text that will not fit inside the box. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Sed et lorem non sapien laoreet varius. Vivamus euismod
+            tortor vel lectus viverra, vel consequat lacus gravida.
+        </p>
+    </div>
+
+    <div id="box3" class="box">
+        <p>
+            This is a very long text that will not fit inside the box. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Sed et lorem non sapien laoreet varius. Vivamus euismod
+            tortor vel lectus viverra, vel consequat lacus gravida.
+        </p>
+    </div>
+
+    <div id="box4" class="box">
+        <p>
+            This is a very long text that will not fit inside the box. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Sed et lorem non sapien laoreet varius. Vivamus euismod
+            tortor vel lectus viverra, vel consequat lacus gravida.
+        </p>
+    </div>
+
+</body>
+</html>

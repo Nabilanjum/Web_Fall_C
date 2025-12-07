@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nabila Anjum Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .theme-btn {
+            background-color: white;
+            color: #4CAF50;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+
+        section {
+            display: none;
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        #clockGreeting {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+
+        button.submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button.submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #f5f5f5;
+        }
+
+        body.dark-mode section {
+            background-color: #444;
+            color: #f5f5f5;
+        }
+
+        body.dark-mode input, body.dark-mode textarea {
+            background-color: #555;
+            color: #f5f5f5;
+            border: 1px solid #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nabila Anjum</h1>
+        <div id="clockGreeting">Welcome!</div>
+        <nav>
+            <a onclick="showSection('about')">About</a>
+            <a onclick="showSection('projects')">Projects</a>
+            <a onclick="showSection('contact')">Contact</a>
+            <button class="theme-btn" onclick="toggleTheme()">Dark/Light Mode</button>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a fourth-year Computer Science student. I like technical problem solving and testing my limits by putting myself in complex situations.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Personal Portfolio Website</li>
+            <li>Interactive Web Applications</li>
+            <li>University Admission Form System</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <div id="nameError" class="error"></div>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <div id="emailError" class="error"></div>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" placeholder="Enter your message"></textarea>
+            <div id="messageError" class="error"></div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+            <div id="successMsg" style="color:green; margin-top:10px;"></div>
+        </form>
+    </section>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle("dark-mode");
+        }
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll("section");
+            sections.forEach(sec => sec.style.display = "none");
+            document.getElementById(sectionId).style.display = "block";
+        }
+
+        showSection("about");
+
+        function updateClockGreeting() {
+            const now = new Date();
+            const hour = now.getHours();
+            let greeting = "";
+
+            if(hour < 12) {
+                greeting = "Good Morning!";
+            } else if(hour < 18) {
+                greeting = "Good Afternoon!";
+            } else {
+                greeting = "Good Evening!";
+            }
+
+            document.getElementById("clockGreeting").innerText = greeting;
+        }
+
+        updateClockGreeting();
+        setInterval(updateClockGreeting, 60000); // update every minute
+
+        function validateForm() {
+            let valid = true;
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            document.getElementById("nameError").innerText = "";
+            document.getElementById("emailError").innerText = "";
+            document.getElementById("messageError").innerText = "";
+            document.getElementById("successMsg").innerText = "";
+
+            if(name === "") {
+                document.getElementById("nameError").innerText = "Name cannot be empty.";
+                valid = false;
+            }
+
+            if(email === "" || !email.includes("@") || !email.includes(".")) {
+                document.getElementById("emailError").innerText = "Enter a valid email.";
+                valid = false;
+            }
+
+            if(message.length < 10) {
+                document.getElementById("messageError").innerText = "Message must be at least 10 characters.";
+                valid = false;
+            }
+
+            if(valid) {
+                document.getElementById("successMsg").innerText = "Message sent successfully!";
+                document.getElementById("contactForm").reset();
+            }
+
+            return false; // prevent actual form submission for demo
+        }
+    </script>
+
+</body>
+</html>

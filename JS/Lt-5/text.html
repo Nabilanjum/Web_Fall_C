@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Analyzer Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+
+        textarea {
+            width: 80%;
+            height: 150px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: vertical;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #results {
+            width: 80%;
+            margin: auto;
+            padding: 15px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Text Analyzer Tool</h1>
+
+    <textarea id="textInput" placeholder="Paste your paragraph here..."></textarea>
+    <br>
+    <button id="analyzeBtn">Analyze Text</button>
+
+    <div id="results">
+        <h2>Results:</h2>
+        <p id="charCount">Total Characters: 0</p>
+        <p id="wordCount">Total Words: 0</p>
+        <p id="reversedText">Reversed Text: </p>
+    </div>
+
+    <script>
+        const analyzeBtn = document.getElementById("analyzeBtn");
+        const textInput = document.getElementById("textInput");
+
+        const charCount = document.getElementById("charCount");
+        const wordCount = document.getElementById("wordCount");
+        const reversedText = document.getElementById("reversedText");
+
+        analyzeBtn.addEventListener("click", function() {
+            let text = textInput.value.trim();
+
+            if(text === "") {
+                alert("Please enter some text to analyze!");
+                return;
+            }
+
+            charCount.innerText = "Total Characters: " + text.length;
+
+            let words = text.split(/\s+/).filter(word => word.length > 0);
+            wordCount.innerText = "Total Words: " + words.length;
+
+            let reversed = text.split("").reverse().join("");
+            reversedText.innerText = "Reversed Text: " + reversed;
+        });
+    </script>
+
+</body>
+</html>
